@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/Pixel To 3D/Assets/Pixel.png" type="Texture" id=1]
+[ext_resource path="res://addons/Pixel To 3D/Pixel/Pixel.gd" type="Script" id=2]
+
+[node name="Pixel" type="Sprite"]
+position = Vector2( 160, 160 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Depth" type="Label" parent="."]
+margin_left = -8.0
+margin_top = -10.0
+margin_right = 8.0
+margin_bottom = 6.0
+rect_scale = Vector2( 0.5, 0.5 )
+text = "1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
