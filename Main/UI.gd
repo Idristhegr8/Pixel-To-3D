@@ -3,13 +3,20 @@ extends Control
 
 func _on_Save_pressed() -> void:
 
+	var file: File = File.new()
+
 	if $"Tools/Saving Path".text != "":
 
-		get_parent().get_node("ViewportContainer/Viewport/3D").get_ready_for_export()
+		if file.file_exists("res://" + $"Tools/Saving Path".text + ".tscn"):
+			print("file exists")
 
-		var packed_scene: PackedScene = PackedScene.new()
-		packed_scene.pack(get_parent().get_node("ViewportContainer/Viewport/3D/Meshes"))
-		ResourceSaver.save("res://" + $"Tools/Saving Path".text + ".tscn", packed_scene)
+		else:
+
+			get_parent().get_node("ViewportContainer/Viewport/3D").get_ready_for_export()
+
+			var packed_scene: PackedScene = PackedScene.new()
+			packed_scene.pack(get_parent().get_node("ViewportContainer/Viewport/3D/Meshes"))
+			ResourceSaver.save("res://" + $"Tools/Saving Path".text + ".tscn", packed_scene)
 
 func _on_Color_pressed() -> void:
 	$ColorPicker.show()

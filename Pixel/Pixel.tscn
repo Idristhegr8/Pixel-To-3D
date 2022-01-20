@@ -9,12 +9,16 @@ scale = Vector2( 4, 4 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
-[node name="Depth" type="Label" parent="."]
-margin_left = -8.0
-margin_top = -10.0
-margin_right = 8.0
-margin_bottom = 6.0
-rect_scale = Vector2( 0.5, 0.5 )
+[node name="Node" type="Node" parent="."]
+
+[node name="Depth" type="Label" parent="Node"]
+visible = false
+margin_left = 128.0
+margin_top = 136.0
+margin_right = 144.0
+margin_bottom = 152.0
+rect_rotation = 0.0869969
+rect_scale = Vector2( 4, 4 )
 text = "1"
 align = 1
 __meta__ = {

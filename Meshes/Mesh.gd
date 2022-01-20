@@ -4,9 +4,9 @@ extends MeshInstance
 var depth_scene: PackedScene
 #var meshes: Array = []
 
-func _ready() -> void:
-	if "Triangle Mesh" in name:
-		translation.z += 0.25
+#func _ready() -> void:
+#	if "Triangle Mesh" in name:
+#		translation.z -= 0.25
 
 func set_depth(depth: int) -> void:
 

@@ -1,2282 +1,1634 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://addons/Pixel To 3D/3D/3D.gd" type="Script" id=1]
+[ext_resource path="res://addons/Pixel To 3D/Meshes/Box Mesh.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/Pixel To 3D/3D/3D.gd" type="Script" id=3]
 
 [sub_resource type="CubeMesh" id=1]
 
 [sub_resource type="SpatialMaterial" id=2]
 
 [node name="3D" type="Spatial"]
-script = ExtResource( 1 )
+script = ExtResource( 3 )
 
 [node name="Meshes" type="Spatial" parent="."]
 
-[node name="Pixel Mesh" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh2" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh2" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh3" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh3" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh4" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh4" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh5" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh5" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh6" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh6" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh7" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh7" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh8" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh8" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh9" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh9" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh10" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh10" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh11" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh11" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh12" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh12" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh13" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh13" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh14" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh14" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh15" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh15" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh16" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh16" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh17" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh17" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh18" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh18" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh19" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh19" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh20" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh20" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh21" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh21" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh22" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh22" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh23" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh23" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh24" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh24" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh25" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh25" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh26" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh26" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh27" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh27" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 6, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh28" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh28" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh29" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh29" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh30" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh30" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh31" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh31" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh32" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh32" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh33" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh33" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh34" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh34" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh35" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh35" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh36" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh36" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh37" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh37" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh38" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh38" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh39" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh39" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh40" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh40" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh41" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh41" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh42" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh42" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh43" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh43" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh44" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh44" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh45" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh45" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh46" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh46" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh47" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh47" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh48" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh48" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh49" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh49" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh50" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh50" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh51" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh51" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh52" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh52" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh53" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh53" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh54" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh54" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 5, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh55" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh55" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh56" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh56" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh57" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh57" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh58" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh58" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh59" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh59" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh60" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh60" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh61" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh61" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh62" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh62" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh63" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh63" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh64" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh64" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh65" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh65" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh66" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh66" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh67" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh67" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh68" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh68" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh69" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh69" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh70" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh70" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh71" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh71" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh72" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh72" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh73" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh73" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh74" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh74" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh75" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh75" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh76" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh76" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh77" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh77" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh78" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh78" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh79" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh79" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh80" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh80" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh81" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh81" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 4, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh82" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh82" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh83" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh83" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh84" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh84" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh85" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh85" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh86" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh86" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh87" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh87" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh88" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh88" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh89" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh89" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh90" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh90" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh91" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh91" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh92" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh92" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh93" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh93" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh94" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh94" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh95" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh95" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh96" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh96" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh97" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh97" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh98" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh98" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh99" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh99" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh100" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh100" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh101" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh101" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh102" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh102" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh103" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh103" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh104" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh104" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh105" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh105" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh106" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh106" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh107" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh107" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh108" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh108" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 3, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh109" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh109" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh110" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh110" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh111" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh111" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh112" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh112" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh113" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh113" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh114" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh114" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh115" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh115" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh116" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh116" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh117" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh117" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh118" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh118" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh119" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh119" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh120" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh120" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh121" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh121" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh122" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh122" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh123" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh123" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh124" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh124" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh125" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh125" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh126" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh126" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh127" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh127" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh128" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh128" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh129" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh129" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh130" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh130" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh131" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh131" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh132" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh132" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh133" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh133" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh134" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh134" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh135" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh135" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 2, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh136" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh136" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh137" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh137" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh138" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh138" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh139" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh139" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh140" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh140" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh141" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh141" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh142" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh142" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh143" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh143" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh144" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh144" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh145" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh145" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh146" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh146" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh147" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh147" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh148" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh148" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh149" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh149" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh150" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh150" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh151" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh151" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh152" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh152" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh153" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh153" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh154" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh154" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh155" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh155" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh156" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh156" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh157" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh157" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh158" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh158" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh159" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh159" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh160" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh160" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh161" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh161" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh162" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh162" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh163" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh163" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh164" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh164" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh165" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh165" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh166" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh166" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh167" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh167" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh168" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh168" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh169" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh169" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh170" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh170" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh171" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh171" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh172" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh172" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh173" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh173" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh174" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh174" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh175" type="MeshInstance" parent="Meshes"]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
-visible = false
+[node name="Box Mesh175" parent="Meshes" instance=ExtResource( 1 )]
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh176" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh176" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh177" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh177" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh178" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh178" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh179" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh179" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh180" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh180" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh181" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh181" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh182" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh182" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh183" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh183" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh184" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh184" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh185" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh185" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh186" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh186" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh187" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh187" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh188" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh188" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh189" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh189" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh190" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh190" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh191" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh191" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh192" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh192" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh193" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh193" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh194" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh194" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh195" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh195" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh196" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh196" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh197" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh197" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh198" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh198" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh199" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh199" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh200" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh200" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh201" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh201" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh202" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh202" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh203" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh203" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh204" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh204" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh205" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh205" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh206" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh206" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh207" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh207" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh208" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh208" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh209" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh209" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh210" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh210" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh211" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh211" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh212" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh212" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh213" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh213" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh214" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh214" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh215" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh215" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh216" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh216" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh217" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh217" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh218" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh218" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh219" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh219" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh220" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh220" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh221" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh221" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh222" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh222" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh223" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh223" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh224" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh224" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh225" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh225" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh226" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh226" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh227" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh227" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh228" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh228" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh229" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh229" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh230" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh230" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh231" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh231" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh232" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh232" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh233" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh233" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh234" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh234" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh235" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh235" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh236" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh236" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh237" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh237" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh238" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh238" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh239" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh239" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh240" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh240" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh241" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh241" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh242" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh242" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh243" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh243" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -2, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh244" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh244" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh245" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh245" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh246" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh246" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh247" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh247" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh248" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh248" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh249" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh249" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh250" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh250" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh251" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh251" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh252" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh252" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh253" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh253" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh254" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh254" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh255" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh255" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh256" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh256" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh257" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh257" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh258" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh258" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh259" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh259" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh260" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh260" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh261" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh261" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh262" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh262" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh263" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh263" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh264" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh264" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh265" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh265" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh266" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh266" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh267" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh267" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh268" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh268" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh269" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh269" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh270" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh270" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -3, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh271" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh271" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh272" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh272" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh273" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh273" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh274" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh274" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh275" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh275" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh276" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh276" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh277" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh277" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh278" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh278" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh279" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh279" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh280" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh280" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh281" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh281" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh282" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh282" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh283" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh283" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh284" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh284" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh285" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh285" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh286" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh286" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh287" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh287" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh288" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh288" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh289" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh289" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh290" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh290" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh291" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh291" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh292" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh292" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh293" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh293" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh294" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh294" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh295" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh295" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh296" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh296" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh297" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh297" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -4, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh298" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh298" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh299" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh299" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh300" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh300" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh301" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh301" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh302" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh302" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh303" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh303" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh304" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh304" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh305" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh305" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh306" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh306" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh307" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh307" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh308" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh308" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh309" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh309" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh310" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh310" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, 0 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh311" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh311" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -1 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh312" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh312" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -2 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh313" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh313" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -3 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh314" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh314" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -4 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh315" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh315" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -5 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh316" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh316" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -6 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh317" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh317" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -7 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh318" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh318" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -8 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh319" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh319" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -9 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh320" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh320" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -10 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh321" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh321" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -11 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh322" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh322" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -12 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh323" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh323" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -13 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
-[node name="Pixel Mesh324" type="MeshInstance" parent="Meshes"]
+[node name="Box Mesh324" parent="Meshes" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -5, -14 )
-visible = false
 mesh = SubResource( 1 )
-skeleton = NodePath("../..")
 material/0 = SubResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]

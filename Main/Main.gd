@@ -8,6 +8,7 @@ var pressed: bool = false
 
 var color: Color = Color("ffffff")
 var depth: int = 1
+var pixel_rotation: int = 0
 
 enum {
 	Pencil,
@@ -74,12 +75,13 @@ func _process(delta: float) -> void:
 				var pixel: Sprite = pixels[pixels_positions.find(mouse_pos)]
 				pixel.texture = shape_pixels[shape]
 				pixel.modulate = color
+				pixel.rotation_degrees = pixel_rotation
 				pixel.show()
 				pixel.depth = depth
 				var pixel_id: int = pixels_positions.find(mouse_pos)
 		#		var pixel_id: Vector2 = Vector2((pixel.global_position.x - 28)/64 - 12, (pixel.global_position.y - 40)/64 - 6)
 #				$"ViewportContainer/Viewport/3D".meshes[pixel_id].show()
-				$"ViewportContainer/Viewport/3D".add_mesh(pixel_id, color, depth, shape_meshes[shape])
+				$"ViewportContainer/Viewport/3D".add_mesh(pixel_id, color, depth, shape_meshes[shape], $Pixel.rotation_degrees)
 
 			elif state == Eraser:
 				var pixel: Sprite = pixels[pixels_positions.find(mouse_pos)]
@@ -128,6 +130,16 @@ func _on_Pencil_pressed() -> void:
 func _on_Eraser_pressed() -> void:
 	state = Eraser
 
+
+func _on_L_Turn_pressed() -> void:
+	$Pixel.rotation_degrees -= 90
+	pixel_rotation = $Pixel.rotation_degrees
+
+func _on_R_Turn_pressed() -> void:
+	$Pixel.rotation_degrees += 90
+	pixel_rotation = $Pixel.rotation_degrees
+
+
 func _on_Square_pressed() -> void:
 	shape = Square
 	$Pixel.texture = load("res://addons/Pixel To 3D/Assets/Pixel_outline.png")
@@ -135,6 +147,8 @@ func _on_Square_pressed() -> void:
 func _on_Triangle_pressed() -> void:
 	shape = Triangle
 	$Pixel.texture = load("res://addons/Pixel To 3D/Assets/Triangle_outline.png")
+
+
 
 
 

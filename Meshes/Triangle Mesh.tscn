@@ -1,13 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://addons/Pixel To 3D/Meshes/Mesh.gd" type="Script" id=1]
-
-[sub_resource type="PrismMesh" id=4]
-
-[sub_resource type="SpatialMaterial" id=2]
+[ext_resource path="res://addons/Pixel To 3D/OBJs/Triangle.obj" type="ArrayMesh" id=2]
 
 [node name="Triangle Mesh" type="MeshInstance"]
-transform = Transform( 0, 0, 0.5, 0, 0.5, 0, -0.5, 0.25, 0, 0, 0, 0 )
-mesh = SubResource( 4 )
-material/0 = SubResource( 2 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
 script = ExtResource( 1 )
