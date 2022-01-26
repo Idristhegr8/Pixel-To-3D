@@ -10,3 +10,5 @@ Shortcuts:
   P = pencil
   
   E = eraser
+
+  Arrow keys to move in the 3D dimension.
