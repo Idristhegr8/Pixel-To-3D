@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/Pixel To 3D/OBJs/Square Cut 7.tres" type="ArrayMesh" id=1]
+[ext_resource path="res://addons/Pixel To 3D/Meshes/Mesh.gd" type="Script" id=2]
+
+[node name="Square Cut 7 Mesh" type="MeshInstance"]
+transform = Transform( -0.5, 4.37114e-08, 0, -4.37114e-08, -0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+script = ExtResource( 2 )

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Semi Circle.obj-016be0333f69f814acb3ca3f67831e55.mesh"
+
+[deps]
+
+files=[ "res://.import/Semi Circle.obj-016be0333f69f814acb3ca3f67831e55.mesh" ]
+
+source_file="res://addons/Pixel To 3D/OBJs/Semi Circle.obj"
+dest_files=[ "res://.import/Semi Circle.obj-016be0333f69f814acb3ca3f67831e55.mesh", "res://.import/Semi Circle.obj-016be0333f69f814acb3ca3f67831e55.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

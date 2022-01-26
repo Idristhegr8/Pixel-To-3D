@@ -1,44 +1,44 @@
 tool
 extends Spatial
 
-var current_meshes_id: Array = ["(0, 6, 12)","(0, 6, 11)","(0, 6, 10)","(0, 6, 9)","(0, 6, 8)","(0, 6, 7)","(0, 6, 6)","(0, 6, 5)","(0, 6, 4)","(0, 6, 3)","(0, 6, 2)","(0, 6, 1)","(0, 6, 0)","(0, 6, -1)","(0, 6, -2)","(0, 6, -3)","(0, 6, -4)","(0, 6, -5)","(0, 6, -6)","(0, 6, -7)","(0, 6, -8)","(0, 6, -9)","(0, 6, -10)","(0, 6, -11)","(0, 6, -12)","(0, 6, -13)","(0, 6, -14)","(0, 5, 12)","(0, 5, 11)","(0, 5, 10)","(0, 5, 9)","(0, 5, 8)","(0, 5, 7)","(0, 5, 6)","(0, 5, 5)","(0, 5, 4)","(0, 5, 3)","(0, 5, 2)","(0, 5, 1)","(0, 5, 0)","(0, 5, -1)","(0, 5, -2)","(0, 5, -3)","(0, 5, -4)","(0, 5, -5)","(0, 5, -6)","(0, 5, -7)","(0, 5, -8)","(0, 5, -9)","(0, 5, -10)","(0, 5, -11)","(0, 5, -12)","(0, 5, -13)","(0, 5, -14)","(0, 4, 12)","(0, 4, 11)","(0, 4, 10)","(0, 4, 9)","(0, 4, 8)","(0, 4, 7)","(0, 4, 6)","(0, 4, 5)","(0, 4, 4)","(0, 4, 3)","(0, 4, 2)","(0, 4, 1)","(0, 4, 0)","(0, 4, -1)","(0, 4, -2)","(0, 4, -3)","(0, 4, -4)","(0, 4, -5)","(0, 4, -6)","(0, 4, -7)","(0, 4, -8)","(0, 4, -9)","(0, 4, -10)","(0, 4, -11)","(0, 4, -12)","(0, 4, -13)","(0, 4, -14)","(0, 3, 12)","(0, 3, 11)","(0, 3, 10)","(0, 3, 9)","(0, 3, 8)","(0, 3, 7)","(0, 3, 6)","(0, 3, 5)","(0, 3, 4)","(0, 3, 3)","(0, 3, 2)","(0, 3, 1)","(0, 3, 0)","(0, 3, -1)","(0, 3, -2)","(0, 3, -3)","(0, 3, -4)","(0, 3, -5)","(0, 3, -6)","(0, 3, -7)","(0, 3, -8)","(0, 3, -9)","(0, 3, -10)","(0, 3, -11)","(0, 3, -12)","(0, 3, -13)","(0, 3, -14)","(0, 2, 12)","(0, 2, 11)","(0, 2, 10)","(0, 2, 9)","(0, 2, 8)","(0, 2, 7)","(0, 2, 6)","(0, 2, 5)","(0, 2, 4)","(0, 2, 3)","(0, 2, 2)","(0, 2, 1)","(0, 2, 0)","(0, 2, -1)","(0, 2, -2)","(0, 2, -3)","(0, 2, -4)","(0, 2, -5)","(0, 2, -6)","(0, 2, -7)","(0, 2, -8)","(0, 2, -9)","(0, 2, -10)","(0, 2, -11)","(0, 2, -12)","(0, 2, -13)","(0, 2, -14)","(0, 1, 12)","(0, 1, 11)","(0, 1, 10)","(0, 1, 9)","(0, 1, 8)","(0, 1, 7)","(0, 1, 6)","(0, 1, 5)","(0, 1, 4)","(0, 1, 3)","(0, 1, 2)","(0, 1, 1)","(0, 1, 0)","(0, 1, -1)","(0, 1, -2)","(0, 1, -3)","(0, 1, -4)","(0, 1, -5)","(0, 1, -6)","(0, 1, -7)","(0, 1, -8)","(0, 1, -9)","(0, 1, -10)","(0, 1, -11)","(0, 1, -12)","(0, 1, -13)","(0, 1, -14)","(0, 0, 12)","(0, 0, 11)","(0, 0, 10)","(0, 0, 9)","(0, 0, 8)","(0, 0, 7)","(0, 0, 6)","(0, 0, 5)","(0, 0, 4)","(0, 0, 3)","(0, 0, 2)","(0, 0, 1)","(0, 0, 0)","(0, 0, -1)","(0, 0, -2)","(0, 0, -3)","(0, 0, -4)","(0, 0, -5)","(0, 0, -6)","(0, 0, -7)","(0, 0, -8)","(0, 0, -9)","(0, 0, -10)","(0, 0, -11)","(0, 0, -12)","(0, 0, -13)","(0, 0, -14)","(0, -1, 12)","(0, -1, 11)","(0, -1, 10)","(0, -1, 9)","(0, -1, 8)","(0, -1, 7)","(0, -1, 6)","(0, -1, 5)","(0, -1, 4)","(0, -1, 3)","(0, -1, 2)","(0, -1, 1)","(0, -1, 0)","(0, -1, -1)","(0, -1, -2)","(0, -1, -3)","(0, -1, -4)","(0, -1, -5)","(0, -1, -6)","(0, -1, -7)","(0, -1, -8)","(0, -1, -9)","(0, -1, -10)","(0, -1, -11)","(0, -1, -12)","(0, -1, -13)","(0, -1, -14)","(0, -2, 12)","(0, -2, 11)","(0, -2, 10)","(0, -2, 9)","(0, -2, 8)","(0, -2, 7)","(0, -2, 6)","(0, -2, 5)","(0, -2, 4)","(0, -2, 3)","(0, -2, 2)","(0, -2, 1)","(0, -2, 0)","(0, -2, -1)","(0, -2, -2)","(0, -2, -3)","(0, -2, -4)","(0, -2, -5)","(0, -2, -6)","(0, -2, -7)","(0, -2, -8)","(0, -2, -9)","(0, -2, -10)","(0, -2, -11)","(0, -2, -12)","(0, -2, -13)","(0, -2, -14)","(0, -3, 12)","(0, -3, 11)","(0, -3, 10)","(0, -3, 9)","(0, -3, 8)","(0, -3, 7)","(0, -3, 6)","(0, -3, 5)","(0, -3, 4)","(0, -3, 3)","(0, -3, 2)","(0, -3, 1)","(0, -3, 0)","(0, -3, -1)","(0, -3, -2)","(0, -3, -3)","(0, -3, -4)","(0, -3, -5)","(0, -3, -6)","(0, -3, -7)","(0, -3, -8)","(0, -3, -9)","(0, -3, -10)","(0, -3, -11)","(0, -3, -12)","(0, -3, -13)","(0, -3, -14)","(0, -4, 12)","(0, -4, 11)","(0, -4, 10)","(0, -4, 9)","(0, -4, 8)","(0, -4, 7)","(0, -4, 6)","(0, -4, 5)","(0, -4, 4)","(0, -4, 3)","(0, -4, 2)","(0, -4, 1)","(0, -4, 0)","(0, -4, -1)","(0, -4, -2)","(0, -4, -3)","(0, -4, -4)","(0, -4, -5)","(0, -4, -6)","(0, -4, -7)","(0, -4, -8)","(0, -4, -9)","(0, -4, -10)","(0, -4, -11)","(0, -4, -12)","(0, -4, -13)","(0, -4, -14)","(0, -5, 12)","(0, -5, 11)","(0, -5, 10)","(0, -5, 9)","(0, -5, 8)","(0, -5, 7)","(0, -5, 6)","(0, -5, 5)","(0, -5, 4)","(0, -5, 3)","(0, -5, 2)","(0, -5, 1)","(0, -5, 0)","(0, -5, -1)","(0, -5, -2)","(0, -5, -3)","(0, -5, -4)","(0, -5, -5)","(0, -5, -6)","(0, -5, -7)","(0, -5, -8)","(0, -5, -9)","(0, -5, -10)","(0, -5, -11)","(0, -5, -12)","(0, -5, -13)","(0, -5, -14)"]
-var meshes_pos: Array
+var current_meshes_id: Array = []
+var meshes_pos: Array = [Vector3(0, 6, 12), Vector3(0, 6, 11), Vector3(0, 6, 10), Vector3(0, 6, 9), Vector3(0, 6, 8), Vector3(0, 6, 7), Vector3(0, 6, 6), Vector3(0, 6, 5), Vector3(0, 6, 4), Vector3(0, 6, 3), Vector3(0, 6, 2), Vector3(0, 6, 1), Vector3(0, 6, 0), Vector3(0, 6, -1), Vector3(0, 6, -2), Vector3(0, 6, -3), Vector3(0, 6, -4), Vector3(0, 6, -5), Vector3(0, 6, -6), Vector3(0, 6, -7), Vector3(0, 6, -8), Vector3(0, 6, -9), Vector3(0, 6, -10), Vector3(0, 6, -11), Vector3(0, 6, -12), Vector3(0, 6, -13), Vector3(0, 6, -14), Vector3(0, 5, 12), Vector3(0, 5, 11), Vector3(0, 5, 10), Vector3(0, 5, 9), Vector3(0, 5, 8), Vector3(0, 5, 7), Vector3(0, 5, 6), Vector3(0, 5, 5), Vector3(0, 5, 4), Vector3(0, 5, 3), Vector3(0, 5, 2), Vector3(0, 5, 1), Vector3(0, 5, 0), Vector3(0, 5, -1), Vector3(0, 5, -2), Vector3(0, 5, -3), Vector3(0, 5, -4), Vector3(0, 5, -5), Vector3(0, 5, -6), Vector3(0, 5, -7), Vector3(0, 5, -8), Vector3(0, 5, -9), Vector3(0, 5, -10), Vector3(0, 5, -11), Vector3(0, 5, -12), Vector3(0, 5, -13), Vector3(0, 5, -14), Vector3(0, 4, 12), Vector3(0, 4, 11), Vector3(0, 4, 10), Vector3(0, 4, 9), Vector3(0, 4, 8), Vector3(0, 4, 7), Vector3(0, 4, 6), Vector3(0, 4, 5), Vector3(0, 4, 4), Vector3(0, 4, 3), Vector3(0, 4, 2), Vector3(0, 4, 1), Vector3(0, 4, 0), Vector3(0, 4, -1), Vector3(0, 4, -2), Vector3(0, 4, -3), Vector3(0, 4, -4), Vector3(0, 4, -5), Vector3(0, 4, -6), Vector3(0, 4, -7), Vector3(0, 4, -8), Vector3(0, 4, -9), Vector3(0, 4, -10), Vector3(0, 4, -11), Vector3(0, 4, -12), Vector3(0, 4, -13), Vector3(0, 4, -14), Vector3(0, 3, 12), Vector3(0, 3, 11), Vector3(0, 3, 10), Vector3(0, 3, 9), Vector3(0, 3, 8), Vector3(0, 3, 7), Vector3(0, 3, 6), Vector3(0, 3, 5), Vector3(0, 3, 4), Vector3(0, 3, 3), Vector3(0, 3, 2), Vector3(0, 3, 1), Vector3(0, 3, 0), Vector3(0, 3, -1), Vector3(0, 3, -2), Vector3(0, 3, -3), Vector3(0, 3, -4), Vector3(0, 3, -5), Vector3(0, 3, -6), Vector3(0, 3, -7), Vector3(0, 3, -8), Vector3(0, 3, -9), Vector3(0, 3, -10), Vector3(0, 3, -11), Vector3(0, 3, -12), Vector3(0, 3, -13), Vector3(0, 3, -14), Vector3(0, 2, 12), Vector3(0, 2, 11), Vector3(0, 2, 10), Vector3(0, 2, 9), Vector3(0, 2, 8), Vector3(0, 2, 7), Vector3(0, 2, 6), Vector3(0, 2, 5), Vector3(0, 2, 4), Vector3(0, 2, 3), Vector3(0, 2, 2), Vector3(0, 2, 1), Vector3(0, 2, 0), Vector3(0, 2, -1), Vector3(0, 2, -2), Vector3(0, 2, -3), Vector3(0, 2, -4), Vector3(0, 2, -5), Vector3(0, 2, -6), Vector3(0, 2, -7), Vector3(0, 2, -8), Vector3(0, 2, -9), Vector3(0, 2, -10), Vector3(0, 2, -11), Vector3(0, 2, -12), Vector3(0, 2, -13), Vector3(0, 2, -14), Vector3(0, 1, 12), Vector3(0, 1, 11), Vector3(0, 1, 10), Vector3(0, 1, 9), Vector3(0, 1, 8), Vector3(0, 1, 7), Vector3(0, 1, 6), Vector3(0, 1, 5), Vector3(0, 1, 4), Vector3(0, 1, 3), Vector3(0, 1, 2), Vector3(0, 1, 1), Vector3(0, 1, 0), Vector3(0, 1, -1), Vector3(0, 1, -2), Vector3(0, 1, -3), Vector3(0, 1, -4), Vector3(0, 1, -5), Vector3(0, 1, -6), Vector3(0, 1, -7), Vector3(0, 1, -8), Vector3(0, 1, -9), Vector3(0, 1, -10), Vector3(0, 1, -11), Vector3(0, 1, -12), Vector3(0, 1, -13), Vector3(0, 1, -14), Vector3(0, 0, 12), Vector3(0, 0, 11), Vector3(0, 0, 10), Vector3(0, 0, 9), Vector3(0, 0, 8), Vector3(0, 0, 7), Vector3(0, 0, 6), Vector3(0, 0, 5), Vector3(0, 0, 4), Vector3(0, 0, 3), Vector3(0, 0, 2), Vector3(0, 0, 1), Vector3(0, 0, 0), Vector3(0, 0, -1), Vector3(0, 0, -2), Vector3(0, 0, -3), Vector3(0, 0, -4), Vector3(0, 0, -5), Vector3(0, 0, -6), Vector3(0, 0, -7), Vector3(0, 0, -8), Vector3(0, 0, -9), Vector3(0, 0, -10), Vector3(0, 0, -11), Vector3(0, 0, -12), Vector3(0, 0, -13), Vector3(0, 0, -14), Vector3(0, -1, 12), Vector3(0, -1, 11), Vector3(0, -1, 10), Vector3(0, -1, 9), Vector3(0, -1, 8), Vector3(0, -1, 7), Vector3(0, -1, 6), Vector3(0, -1, 5), Vector3(0, -1, 4), Vector3(0, -1, 3), Vector3(0, -1, 2), Vector3(0, -1, 1), Vector3(0, -1, 0), Vector3(0, -1, -1), Vector3(0, -1, -2), Vector3(0, -1, -3), Vector3(0, -1, -4), Vector3(0, -1, -5), Vector3(0, -1, -6), Vector3(0, -1, -7), Vector3(0, -1, -8), Vector3(0, -1, -9), Vector3(0, -1, -10), Vector3(0, -1, -11), Vector3(0, -1, -12), Vector3(0, -1, -13), Vector3(0, -1, -14), Vector3(0, -2, 12), Vector3(0, -2, 11), Vector3(0, -2, 10), Vector3(0, -2, 9), Vector3(0, -2, 8), Vector3(0, -2, 7), Vector3(0, -2, 6), Vector3(0, -2, 5), Vector3(0, -2, 4), Vector3(0, -2, 3), Vector3(0, -2, 2), Vector3(0, -2, 1), Vector3(0, -2, 0), Vector3(0, -2, -1), Vector3(0, -2, -2), Vector3(0, -2, -3), Vector3(0, -2, -4), Vector3(0, -2, -5), Vector3(0, -2, -6), Vector3(0, -2, -7), Vector3(0, -2, -8), Vector3(0, -2, -9), Vector3(0, -2, -10), Vector3(0, -2, -11), Vector3(0, -2, -12), Vector3(0, -2, -13), Vector3(0, -2, -14), Vector3(0, -3, 12), Vector3(0, -3, 11), Vector3(0, -3, 10), Vector3(0, -3, 9), Vector3(0, -3, 8), Vector3(0, -3, 7), Vector3(0, -3, 6), Vector3(0, -3, 5), Vector3(0, -3, 4), Vector3(0, -3, 3), Vector3(0, -3, 2), Vector3(0, -3, 1), Vector3(0, -3, 0), Vector3(0, -3, -1), Vector3(0, -3, -2), Vector3(0, -3, -3), Vector3(0, -3, -4), Vector3(0, -3, -5), Vector3(0, -3, -6), Vector3(0, -3, -7), Vector3(0, -3, -8), Vector3(0, -3, -9), Vector3(0, -3, -10), Vector3(0, -3, -11), Vector3(0, -3, -12), Vector3(0, -3, -13), Vector3(0, -3, -14), Vector3(0, -4, 12), Vector3(0, -4, 11), Vector3(0, -4, 10), Vector3(0, -4, 9), Vector3(0, -4, 8), Vector3(0, -4, 7), Vector3(0, -4, 6), Vector3(0, -4, 5), Vector3(0, -4, 4), Vector3(0, -4, 3), Vector3(0, -4, 2), Vector3(0, -4, 1), Vector3(0, -4, 0), Vector3(0, -4, -1), Vector3(0, -4, -2), Vector3(0, -4, -3), Vector3(0, -4, -4), Vector3(0, -4, -5), Vector3(0, -4, -6), Vector3(0, -4, -7), Vector3(0, -4, -8), Vector3(0, -4, -9), Vector3(0, -4, -10), Vector3(0, -4, -11), Vector3(0, -4, -12), Vector3(0, -4, -13), Vector3(0, -4, -14), Vector3(0, -5, 12), Vector3(0, -5, 11), Vector3(0, -5, 10), Vector3(0, -5, 9), Vector3(0, -5, 8), Vector3(0, -5, 7), Vector3(0, -5, 6), Vector3(0, -5, 5), Vector3(0, -5, 4), Vector3(0, -5, 3), Vector3(0, -5, 2), Vector3(0, -5, 1), Vector3(0, -5, 0), Vector3(0, -5, -1), Vector3(0, -5, -2), Vector3(0, -5, -3), Vector3(0, -5, -4), Vector3(0, -5, -5), Vector3(0, -5, -6), Vector3(0, -5, -7), Vector3(0, -5, -8), Vector3(0, -5, -9), Vector3(0, -5, -10), Vector3(0, -5, -11), Vector3(0, -5, -12), Vector3(0, -5, -13), Vector3(0, -5, -14)]
 
-func _ready() -> void:
-
-#	meshes = $Meshes.get_children()
-	for mesh in $Meshes.get_children():
-		meshes_pos.append(mesh.translation)
-		mesh.queue_free()
+#func _ready() -> void:
+#
+##	meshes = $Meshes.get_children()
+#	for mesh in $Meshes.get_children():
+#		meshes_pos.append(mesh.translation)
+#		mesh.queue_free()
 #	print(meshes)
 
-	# W
-	if not InputMap.has_action("W"):
-		InputMap.add_action("W")
-	var W: InputEventKey = InputEventKey.new()
-	W.scancode = KEY_W
-	InputMap.action_add_event("W", W)
-
-	# A
-	if not InputMap.has_action("A"):
-		InputMap.add_action("A")
-	var A: InputEventKey = InputEventKey.new()
-	A.scancode = KEY_A
-	InputMap.action_add_event("A", A)
-
-	# S
-	if not InputMap.has_action("S"):
-		InputMap.add_action("S")
-	var S: InputEventKey = InputEventKey.new()
-	S.scancode = KEY_S
-	InputMap.action_add_event("S", S)
-
-	# D
-	if not InputMap.has_action("D"):
-		InputMap.add_action("D")
-	var D: InputEventKey = InputEventKey.new()
-	D.scancode = KEY_D
-	InputMap.action_add_event("D", D)
+#	# W
+#	if not InputMap.has_action("W"):
+#		InputMap.add_action("W")
+#	var W: InputEventKey = InputEventKey.new()
+#	W.scancode = KEY_W
+#	InputMap.action_add_event("W", W)
+#
+#	# A
+#	if not InputMap.has_action("A"):
+#		InputMap.add_action("A")
+#	var A: InputEventKey = InputEventKey.new()
+#	A.scancode = KEY_A
+#	InputMap.action_add_event("A", A)
+#
+#	# S
+#	if not InputMap.has_action("S"):
+#		InputMap.add_action("S")
+#	var S: InputEventKey = InputEventKey.new()
+#	S.scancode = KEY_S
+#	InputMap.action_add_event("S", S)
+#
+#	# D
+#	if not InputMap.has_action("D"):
+#		InputMap.add_action("D")
+#	var D: InputEventKey = InputEventKey.new()
+#	D.scancode = KEY_D
+#	InputMap.action_add_event("D", D)
 
 func _process(delta: float) -> void:
 	if Input.is_action_pressed("ui_right"):

@@ -23,7 +23,7 @@ func set_depth(depth: int) -> void:
 	if depth != 0:
 		for mesh in depth:
 			x = x -2
-			var mesh_1: MeshInstance = load("res://addons/Pixel To 3D/Meshes/Box Mesh.tscn").instance()
+			var mesh_1: MeshInstance = depth_scene.instance()
 			mesh_1.scale = Vector3(1, 1, 1)
 			mesh_1.translation = Vector3(0, 0, 0)
 			mesh_1.translation.x = x
@@ -36,7 +36,7 @@ func set_depth(depth: int) -> void:
 
 		for mesh in depth:
 			x = x +2
-			var mesh_1: MeshInstance = load("res://addons/Pixel To 3D/Meshes/Box Mesh.tscn").instance()
+			var mesh_1: MeshInstance = depth_scene.instance()
 			mesh_1.scale = Vector3(1, 1, 1)
 			mesh_1.translation = Vector3(0, 0, 0)
 			mesh_1.translation.x = x

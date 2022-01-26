@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Triangle_outline.png-533af880b743ee2bc4adb075debe129e.stex"
+path="res://.import/Square_Cut_7_outline.png-1e369f2fec6c8a00cdd583f179b4043b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/Pixel To 3D/Assets/Triangle_outline.png"
-dest_files=[ "res://.import/Triangle_outline.png-533af880b743ee2bc4adb075debe129e.stex" ]
+source_file="res://addons/Pixel To 3D/Assets/Square_Cut_7_outline.png"
+dest_files=[ "res://.import/Square_Cut_7_outline.png-1e369f2fec6c8a00cdd583f179b4043b.stex" ]
 
 [params]
 
